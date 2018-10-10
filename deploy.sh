@@ -24,7 +24,8 @@ cd $PROJ_PATH/order
 mvn clean install
 
 # 停tomcat
-killTomcat
+cd $TOMCAT_APP_PATH/
+sh bin/shutdown.sh
 
 # 删除原有工程
 rm -rf $TOMCAT_APP_PATH/webapps/ROOT
